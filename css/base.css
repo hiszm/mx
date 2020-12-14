@@ -1,0 +1,279 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body,html{
+	height: 100%;
+	width: 100%;
+	/* background: hsla(0,0%,100%,.25); */
+}
+input{
+	background-color: transparent;
+	outline: none;
+	border: 0;
+}
+/* 去掉webkit内核浏览器的边框 */
+input[type="search"] {
+	-webkit-appearance: none;
+}
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+ ::-webkit-scrollbar{
+ 			width: 4px;
+ 			background-color: transparent;
+ 		}
+ 		 
+ /*定义滚动条轨道 内阴影+圆角*/
+ ::-webkit-scrollbar-track{
+ 			/* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+ 			border-radius: 10px;
+ 			background-color:transparent;
+ 		}	
+ /*定义滑块 内阴影+圆角*/
+ ::-webkit-scrollbar-thumb{
+ 			border-radius: 20px;
+ 			/* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+ 			/* background-color: #E1E1E2; */
+			background: radial-gradient(rgba(107, 107, 107, 0.3), rgba(107, 107, 107, 0.5))  !important;
+ 		}
+/* 下面是导航栏的 */
+.navbar-ngs {
+	background-color: #f8f8f8;
+	background: linear-gradient(rgba(243, 243, 243, 0.3), rgba(204, 204, 204, 0.8));
+	border-color: #e7e7e7;
+	/* nav默认有一个10px的下必须去掉 */
+	margin-bottom: -1px !important;
+	border-top-right-radius: 30px !important;
+	border-top-left-radius: 30px !important;
+	;
+}
+
+.navbar-ngs .navbar-brand {
+	color: #777;
+	padding: 0;
+}
+
+.navbar-ngs .navbar-brand:hover,
+.navbar-ngs .navbar-brand:focus {
+	color: #5e5e5e;
+	background-color: transparent;
+}
+
+.navbar-ngs .navbar-text {
+	color: #777;
+}
+
+.navbar-ngs .navbar-nav>li>a {
+	color: #777;
+}
+
+.navbar-ngs .navbar-nav>li>a:hover,
+.navbar-ngs .navbar-nav>li>a:focus {
+	color: #333;
+	background-color: #E5E5E5;
+	box-shadow: 2px 2px 10px #D5D5D5 inset, -2px -3px 10px #D5D5D5 inset;
+	/* background-color: transparent; */
+}
+
+.navbar-ngs .navbar-nav>.active>a,
+.navbar-ngs .navbar-nav>.active>a:hover,
+.navbar-ngs .navbar-nav>.active>a:focus {
+	color: #555;
+	background-color: #E5E5E5;
+	box-shadow: 2px 2px 10px #D5D5D5 inset, -2px -3px 10px #D5D5D5 inset;
+	/* background: linear-gradient(rgba(243,243,243,0.3), rgba(204,204,204,0.8)); */
+	/* background: linear-gradient(rgba(231,231,231,0.3), rgba(231,231,231,0.8)); */
+	/* background-color: #e7e7e7; */
+}
+
+.navbar-ngs .navbar-nav>.disabled>a,
+.navbar-ngs .navbar-nav>.disabled>a:hover,
+.navbar-ngs .navbar-nav>.disabled>a:focus {
+	color: #ccc;
+	background-color: transparent;
+}
+
+.navbar-ngs .navbar-toggle {
+	border-color: #ddd;
+}
+
+.navbar-ngs .navbar-toggle:hover,
+.navbar-ngs .navbar-toggle:focus {
+	background-color: #ddd;
+}
+
+.navbar-ngs .navbar-toggle .icon-bar {
+	background-color: #888;
+}
+
+.navbar-ngs .navbar-collapse,
+.navbar-ngs .navbar-form {
+	border-color: #e7e7e7;
+}
+
+.navbar-ngs .navbar-nav>.open>a,
+.navbar-ngs .navbar-nav>.open>a:hover,
+.navbar-ngs .navbar-nav>.open>a:focus {
+	color: #555;
+	background-color: #e7e7e7;
+}
+
+@media (max-width: 767px) {
+	.navbar-ngs .navbar-nav .open .dropdown-menu>li>a {
+		color: #777;
+	}
+
+	.navbar-ngs .navbar-nav .open .dropdown-menu>li>a:hover,
+	.navbar-ngs .navbar-nav .open .dropdown-menu>li>a:focus {
+		color: #333;
+		background-color: transparent;
+	}
+
+	.navbar-ngs .navbar-nav .open .dropdown-menu>.active>a,
+	.navbar-ngs .navbar-nav .open .dropdown-menu>.active>a:hover,
+	.navbar-ngs .navbar-nav .open .dropdown-menu>.active>a:focus {
+		color: #555;
+		background-color: #e7e7e7;
+	}
+
+	.navbar-ngs .navbar-nav .open .dropdown-menu>.disabled>a,
+	.navbar-ngs .navbar-nav .open .dropdown-menu>.disabled>a:hover,
+	.navbar-ngs .navbar-nav .open .dropdown-menu>.disabled>a:focus {
+		color: #ccc;
+		background-color: transparent;
+	}
+}
+
+.navbar-ngs .navbar-link {
+	color: #777;
+}
+
+.navbar-ngs .navbar-link:hover {
+	color: #333;
+}
+
+.navbar-ngs .btn-link {
+	color: #777;
+}
+
+.navbar-ngs .btn-link:hover,
+.navbar-ngs .btn-link:focus {
+	color: #333;
+}
+
+.navbar-ngs .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-ngs .btn-link:hover,
+.navbar-ngs .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-ngs .btn-link:focus {
+	color: #ccc;
+}
+/* 下面是左边面板的 */
+.panel-ngs {
+	height: 100%;
+	background: radial-gradient(rgba(107, 107, 107, 0.3), rgba(107, 107, 107, 0.8))  !important;
+	margin-bottom: 0 !important;
+	position: relative;
+}
+.panel-ngs .pannel-l-cir,
+.panel-ngs .pannel-r-cir{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius:50% ;
+	background-color: #ccc;
+	z-index: -1;
+	border: 1px  solid  #3C3C3C;
+	top: -10px;
+}
+.panel-ngs .pannel-l-cir{
+	border-bottom-left-radius: 0;
+	border-right-color:transparent;
+	transform: rotate(40deg);
+	
+	left: -10px;
+}
+.panel-ngs .pannel-r-cir{
+	border-top-left-radius: 0;
+	border-right-color:transparent;
+	transform: rotate(130deg);
+	right: -10px;
+}
+.panel-ngs > .panel-heading {
+  color: #333;
+	height: 40px;
+	background: linear-gradient(rgba(179, 179, 179, 0.3), rgba(179, 179, 179, 1));
+}
+.panel-ngs .table-ngs{
+	height: calc(100% - 40px);
+	overflow-y: scroll ;
+}
+.panel-ngs .table-ngs thead tr th{
+		border-bottom: 2px solid #000 !important;
+		box-shadow: 0 5px 5px #000;
+} 
+.panel-ngs .table-ngs table tr{
+	cursor: pointer;
+}
+.panel-ngs > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #ddd;
+}
+.panel-ngs > .panel-heading .badge {
+  color: #f5f5f5;
+  background-color: #333;
+}
+/* 右边面板 */
+.panel{
+}
+.panel-player {
+	height: 100%;
+	width: 100%;
+	border-radius: 30px !important;
+	/* background: linear-gradient(rgba(179, 179, 179, 0.3), rgba(179, 179, 179, 1)) !important; ; */
+	background: radial-gradient(rgba(107, 107, 107, 0.3), rgba(107, 107, 107, 0.8))  !important;
+  border: 3px solid #aaa !important;
+	box-shadow: 2px 2px 10px #000,-2px -2px 10px #000  !important;
+}
+.panel-player > .panel-heading {
+	color: #333;
+	height: 40px;
+	position: relative;
+  /* background: linear-gradient(rgba(179, 179, 179, 0.3), rgba(179, 179, 179, 1)); */
+  border-color: #ddd;
+	overflow: hidden;
+}
+.panel-player .panel-body{
+	height: calc(100% - 80px);
+	overflow: hidden;
+	padding: 5px 10px;
+	position: relative;
+}
+@media (max-width:768px) {
+	.panel-player .panel-body{
+		height:100% !important;
+		padding: 10px;
+	}
+}
+.panel-player > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #ddd;
+}
+.panel-player > .panel-heading .panel-title{
+	height: 40px;
+	background-image: url(../images/logo.png);
+	background-repeat: no-repeat;
+	background-size: 60px 60px;
+	background-position: 0px -8px;
+}
+.panel-player > .panel-heading .badge {
+  color: #f5f5f5;
+  background-color: #333;
+}
+
+.panel-player > .panel-footer{
+	height: 40px;
+	position: relative;
+	background-color: transparent;
+	/* background: linear-gradient(rgba(179, 179, 179, 0.3), rgba(179, 179, 179, 1)); */
+}
+.panel-player > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #ddd;
+}
